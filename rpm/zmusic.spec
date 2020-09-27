@@ -1,7 +1,7 @@
 # Global settings
 %global major_version 1
 %global minor_version 1
-%global micro_version 0
+%global micro_version 3
 %global archive_name ZMusic
 
 Name:           zmusic
@@ -87,6 +87,9 @@ mv lib %{_lib}
 %{_includedir}/*
 
 %changelog
+* Sun Sep 27 2020 Louis Abel <tucklesepk@gmail.com> - 1.1.3-1
+- Rebase to 1.1.3
+
 * Sun Jun 14 2020 Louis Abel <tucklesepk@gmail.com> - 1.1.0-1
 - Initial zmusic build
 
