@@ -74,8 +74,8 @@ rm -rf $RPM_BUILD_ROOT
 
 cd build
 %make_install
-cd %{buildroot}/%{_prefix}
-mv lib %{_lib}
+#cd %{buildroot}/%{_prefix}
+#mv lib %{_lib}
 
 %files
 %defattr(-, root, root, -)
@@ -89,6 +89,7 @@ mv lib %{_lib}
 %changelog
 * Sun Sep 27 2020 Louis Abel <tucklesepk@gmail.com> - 1.1.3-1
 - Rebase to 1.1.3
+- lib and lib64 installs fixed
 
 * Sun Jun 14 2020 Louis Abel <tucklesepk@gmail.com> - 1.1.0-1
 - Initial zmusic build
