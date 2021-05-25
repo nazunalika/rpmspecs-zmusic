@@ -1,18 +1,18 @@
 # Global settings
 %global major_version 1
 %global minor_version 1
-%global micro_version 3
+%global micro_version 8
 %global archive_name ZMusic
 
 Name:           zmusic
 Version:        %{major_version}.%{minor_version}.%{micro_version}
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        ZMusic libraries and headers for GZDoom functionality
 License:        GPLv3
 Url:            http://zdoom.org
 Source0:        https://github.com/coelckers/ZMusic/archive/%{version}.tar.gz
 
-Provides:       zmusic = 1.1.3
+Provides:       zmusic = %{major_version}.%{minor_version}.%{micro_version}
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  gcc-c++
@@ -38,7 +38,7 @@ BuildRequires:  pkgconfig(openal)
 BuildRequires:  pkgconfig(libmpg123)
 
 BuildRequires:  timidity++
-BuildRequires:  wildmidi-devel
+BuildRequires:  pkgconfig(wildmidi)
 
 %description
 ZDoom is a family of enhanced ports (modifications) of the Doom engine for
@@ -86,6 +86,13 @@ cd build
 %{_includedir}/*
 
 %changelog
+* Tue May 25 2021 Louis Abel <tucklesepk@gmail.com> - 1.1.8-1
+- Fix requirements to use pkgconfig
+- Rebase to 1.1.8
+
+* Tue Mar 30 2021 Louis Abel <tucklesepk@gmail.com> - 1.1.6-3
+- Rebase to 1.1.6
+
 * Mon Oct 26 2020 Louis Abel <tucklesepk@gmail.com> - 1.1.3-2
 - Build for Fedora 33
 - Adapt to Fedora macro changes for out-of-source builds
