@@ -1,7 +1,7 @@
 # Global settings
 %global major_version 1
 %global minor_version 1
-%global micro_version 8
+%global micro_version 9
 %global archive_name ZMusic
 
 Name:           zmusic
@@ -86,6 +86,9 @@ cd build
 %{_includedir}/*
 
 %changelog
+* Mon Jun 06 2022 Louis Abel <tucklesepk@gmail.com> - 1.1.9-1
+- Rebase to 1.1.9
+
 * Tue May 25 2021 Louis Abel <tucklesepk@gmail.com> - 1.1.8-1
 - Fix requirements to use pkgconfig
 - Rebase to 1.1.8
