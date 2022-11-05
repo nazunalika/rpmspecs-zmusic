@@ -1,7 +1,7 @@
 # Global settings
 %global major_version 1
 %global minor_version 1
-%global micro_version 9
+%global micro_version 11
 %global archive_name ZMusic
 
 Name:           zmusic
@@ -86,6 +86,9 @@ cd build
 %{_includedir}/*
 
 %changelog
+* Sat Nov 05 2022 Louis Abel <tucklesepk@gmail.com> - 1.1.11-1
+- Rebase to 1.1.9
+
 * Mon Jun 06 2022 Louis Abel <tucklesepk@gmail.com> - 1.1.9-1
 - Rebase to 1.1.9
 
