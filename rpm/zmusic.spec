@@ -86,7 +86,7 @@ cd build
 %{_includedir}/*
 
 %changelog
-* Sat Apr 04 2023 Louis Abel <tucklesepk@gmail.com> - 1.1.12-1
+* Sat Tue 04 2023 Louis Abel <tucklesepk@gmail.com> - 1.1.12-1
 - Rebase to 1.1.12
 
 * Sat Nov 05 2022 Louis Abel <tucklesepk@gmail.com> - 1.1.11-1
