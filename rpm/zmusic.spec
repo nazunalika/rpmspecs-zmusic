@@ -1,12 +1,12 @@
 # Global settings
 %global major_version 1
 %global minor_version 1
-%global micro_version 12
+%global micro_version 14
 %global archive_name ZMusic
 
 Name:           zmusic
 Version:        %{major_version}.%{minor_version}.%{micro_version}
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        ZMusic libraries and headers for GZDoom functionality
 License:        GPLv3
 Url:            http://zdoom.org
@@ -86,6 +86,9 @@ cd build
 %{_includedir}/*
 
 %changelog
+* Sat Oct 12 2024 Louis Abel <tucklesepk@gmail.com> - 1.1.14-2
+- Rebase to 1.1.14
+
 * Thu Sep 21 2023 Louis Abel <tucklesepk@gmail.com> - 1.1.12-2
 - Repair changelog date and rebuild zmusic
 
