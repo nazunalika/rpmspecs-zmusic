@@ -6,7 +6,7 @@
 
 Name:           zmusic
 Version:        %{major_version}.%{minor_version}.%{micro_version}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        ZMusic libraries and headers for GZDoom functionality
 License:        GPLv3
 Url:            http://zdoom.org
@@ -86,6 +86,9 @@ cd build
 %{_includedir}/*
 
 %changelog
+* Fri Jan 03 2025 Louis Abel <tucklesepk@gmail.com> - 1.1.14-2
+- Rebuild
+
 * Sat Oct 12 2024 Louis Abel <tucklesepk@gmail.com> - 1.1.14-2
 - Rebase to 1.1.14
 
