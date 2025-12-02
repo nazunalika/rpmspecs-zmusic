@@ -6,11 +6,11 @@
 
 Name:           zmusic
 Version:        %{major_version}.%{minor_version}.%{micro_version}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        ZMusic libraries and headers for GZDoom functionality
 License:        GPLv3
 Url:            http://zdoom.org
-Source0:        https://github.com/coelckers/ZMusic/archive/%{version}.tar.gz
+Source0:        https://github.com/UZDoom/ZMusic/archive/%{version}.tar.gz
 
 Provides:       zmusic = %{major_version}.%{minor_version}.%{micro_version}
 
@@ -86,6 +86,9 @@ cd build
 %{_includedir}/*
 
 %changelog
+* Tue Dec 02 2025 Louis Abel <tucklesepk@gmail.com> - 1.3.0-2
+- Set new origin for builds
+
 * Mon Oct 06 2025 Louis Abel <tucklesepk@gmail.com> - 1.3.0-1
 - Rebase to 1.3.0
 
